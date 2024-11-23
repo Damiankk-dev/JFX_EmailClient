@@ -15,6 +15,7 @@ public class Launcher extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         ViewFactory viewFactory = new ViewFactory(new EmailManager());
-        viewFactory.showLoginWindow();
+        viewFactory.showMainWindow();
+        viewFactory.updateStyles();
     }
 }

@@ -22,10 +22,14 @@ public class MainWindowController extends BaseController {
         super(emailManager, viewFactory, fxmlName);
     }
 
-
     @FXML
     void optionsAction() {
         viewFactory.showOptionsWindow();
+    }
+
+    @FXML
+    void addAccountAction() {
+        viewFactory.showLoginWindow();
     }
 
 }

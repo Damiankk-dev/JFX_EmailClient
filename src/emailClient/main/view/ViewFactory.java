@@ -24,7 +24,7 @@ public class ViewFactory {
     }
 
     //VIEW OPTIONS HANDLING
-    private ColorTheme colorTheme = ColorTheme.DARK;
+    private ColorTheme colorTheme = ColorTheme.DEFAULT;
     private FontSize fontSize = FontSize.MEDIUM;
 
     public ColorTheme getColorTheme() {

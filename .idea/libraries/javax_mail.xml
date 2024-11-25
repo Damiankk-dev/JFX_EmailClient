@@ -5,6 +5,27 @@
       <root url="jar://$PROJECT_DIR$/../libraries/javaAcivationFramework/activation.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../libraries/javaMail/javamail-JAVAMAIL-1_6_2.zip!/javamail-JAVAMAIL-1_6_2/android/activation/src/main/java" />
+      <root url="jar://$PROJECT_DIR$/../libraries/javaMail/javamail-JAVAMAIL-1_6_2.zip!/javamail-JAVAMAIL-1_6_2/android/mail/src/main/java" />
+      <root url="jar://$PROJECT_DIR$/../libraries/javaMail/javamail-JAVAMAIL-1_6_2.zip!/javamail-JAVAMAIL-1_6_2/client/src/main/java" />
+      <root url="jar://$PROJECT_DIR$/../libraries/javaMail/javamail-JAVAMAIL-1_6_2.zip!/javamail-JAVAMAIL-1_6_2/demo/src/main/java" />
+      <root url="jar://$PROJECT_DIR$/../libraries/javaMail/javamail-JAVAMAIL-1_6_2.zip!/javamail-JAVAMAIL-1_6_2/demo/src/main/java/internal" />
+      <root url="jar://$PROJECT_DIR$/../libraries/javaMail/javamail-JAVAMAIL-1_6_2.zip!/javamail-JAVAMAIL-1_6_2/dsn/src/main/java" />
+      <root url="jar://$PROJECT_DIR$/../libraries/javaMail/javamail-JAVAMAIL-1_6_2.zip!/javamail-JAVAMAIL-1_6_2/dsn/src/test/java" />
+      <root url="jar://$PROJECT_DIR$/../libraries/javaMail/javamail-JAVAMAIL-1_6_2.zip!/javamail-JAVAMAIL-1_6_2/gimap/src/main/java" />
+      <root url="jar://$PROJECT_DIR$/../libraries/javaMail/javamail-JAVAMAIL-1_6_2.zip!/javamail-JAVAMAIL-1_6_2/logging/src/main/java" />
+      <root url="jar://$PROJECT_DIR$/../libraries/javaMail/javamail-JAVAMAIL-1_6_2.zip!/javamail-JAVAMAIL-1_6_2/mail/src/main/java" />
+      <root url="jar://$PROJECT_DIR$/../libraries/javaMail/javamail-JAVAMAIL-1_6_2.zip!/javamail-JAVAMAIL-1_6_2/mail/src/main/resources" />
+      <root url="jar://$PROJECT_DIR$/../libraries/javaMail/javamail-JAVAMAIL-1_6_2.zip!/javamail-JAVAMAIL-1_6_2/mail/src/oldtest/java/javax/mail/internet" />
+      <root url="jar://$PROJECT_DIR$/../libraries/javaMail/javamail-JAVAMAIL-1_6_2.zip!/javamail-JAVAMAIL-1_6_2/mail/src/oldtest/java/javax/mail/internet/socketfactory" />
+      <root url="jar://$PROJECT_DIR$/../libraries/javaMail/javamail-JAVAMAIL-1_6_2.zip!/javamail-JAVAMAIL-1_6_2/mail/src/test/java" />
+      <root url="jar://$PROJECT_DIR$/../libraries/javaMail/javamail-JAVAMAIL-1_6_2.zip!/javamail-JAVAMAIL-1_6_2/mbox/src/main/java" />
+      <root url="jar://$PROJECT_DIR$/../libraries/javaMail/javamail-JAVAMAIL-1_6_2.zip!/javamail-JAVAMAIL-1_6_2/mbox/src/test/java" />
+      <root url="jar://$PROJECT_DIR$/../libraries/javaMail/javamail-JAVAMAIL-1_6_2.zip!/javamail-JAVAMAIL-1_6_2/outlook/src/main/java" />
+      <root url="jar://$PROJECT_DIR$/../libraries/javaMail/javamail-JAVAMAIL-1_6_2.zip!/javamail-JAVAMAIL-1_6_2/servlet/src/main/java" />
+      <root url="jar://$PROJECT_DIR$/../libraries/javaMail/javamail-JAVAMAIL-1_6_2.zip!/javamail-JAVAMAIL-1_6_2/taglib/src/main/java" />
+      <root url="jar://$PROJECT_DIR$/../libraries/javaMail/javamail-JAVAMAIL-1_6_2.zip!/javamail-JAVAMAIL-1_6_2/webapp/src/main/java" />
+    </SOURCES>
   </library>
 </component>

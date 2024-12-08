@@ -9,4 +9,5 @@ module FirstJavaFx {
     opens emailClient.main;
     opens emailClient.main.view;
     opens emailClient.main.controller;
+    opens emailClient.main.model;
 }

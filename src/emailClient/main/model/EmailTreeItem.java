@@ -12,6 +12,7 @@ import javax.mail.internet.MimeMessage;
 public class EmailTreeItem<String> extends TreeItem<String> {
     private String name;
     private ObservableList<EmailMessage> emailMessages;
+    private int unreadMessagesCount;
 
     public EmailTreeItem(String name) {
         super(name);
@@ -31,6 +32,22 @@ public class EmailTreeItem<String> extends TreeItem<String> {
                 message
         );
         emailMessages.add(emailMessage);
+        if (!messageIsRead){
+            incrementMessagesCount();
+        }
         System.out.println("Added to " + name + " " + message.getSubject());
+    }
+
+    public void incrementMessagesCount(){
+        unreadMessagesCount++;
+        updateName();
+    }
+
+    private void updateName(){
+        if (unreadMessagesCount > 0 ){
+            this.setValue((String)(name+ " [" + unreadMessagesCount + "]"));
+        } else {
+            this.setValue(name);
+        }
     }
 }

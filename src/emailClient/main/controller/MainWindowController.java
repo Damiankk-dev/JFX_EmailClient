@@ -21,6 +21,7 @@ public class MainWindowController extends BaseController implements Initializabl
     private MenuItem markUnreadMenuItem = new MenuItem("Mark as unread");
     private MenuItem deleteMessageMenuItem = new MenuItem("Delete message");
 
+
     @FXML
     private WebView emailWebView;
 
@@ -60,6 +61,10 @@ public class MainWindowController extends BaseController implements Initializabl
     @FXML
     void addAccountAction() {
         viewFactory.showLoginWindow();
+    }
+    @FXML
+    void composeMessageAction() {
+        viewFactory.showComposeMessageWindow();
     }
 
     @Override

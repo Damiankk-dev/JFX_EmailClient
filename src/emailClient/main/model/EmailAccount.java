@@ -1,5 +1,6 @@
 package emailClient.main.model;
 
+import javax.mail.Session;
 import javax.mail.Store;
 import java.util.Properties;
 
@@ -8,6 +9,7 @@ public class EmailAccount {
     private String password;
     private Properties properties;
     private Store store;
+    private Session session;
 
     public EmailAccount(String address, String password) {
         this.address = address;
@@ -16,9 +18,13 @@ public class EmailAccount {
         properties.put("incomingHost", "imap.wp.pl");
         properties.put("mail.store.protocol","imaps");
         properties.put("mail.transport.protocol","smtps");
-        properties.put("mail.smtps.host","smtp.wp.pl");
-        properties.put("mail.smtps.auth","true");
+        properties.put("mail.smtp.host","smtp.wp.pl");
         properties.put("outgoingHost", "smtp.wp.pl");
+        properties.put("mail.smtp.socketFactory.port", "465"); //SSL Port
+        properties.put("mail.smtp.socketFactory.class",
+                "javax.net.ssl.SSLSocketFactory"); //SSL Factory Class
+        properties.put("mail.smtp.auth", "true"); //Enabling SMTP Authentication
+        properties.put("mail.smtp.port", "465"); //SMTP Port
     }
 
     public String getAddress() {
@@ -48,5 +54,13 @@ public class EmailAccount {
 
     public void setStore(Store store) {
         this.store = store;
+    }
+
+    public Session getSession() {
+        return session;
+    }
+
+    public void setSession(Session session) {
+        this.session = session;
     }
 }

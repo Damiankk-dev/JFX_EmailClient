@@ -5,19 +5,21 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.web.HTMLEditor?>
 
-
-<AnchorPane prefHeight="601.0" prefWidth="529.0" styleClass="container"  xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="601.0" prefWidth="529.0" styleClass="container" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label layoutX="22.0" layoutY="40.0" prefHeight="32.0" prefWidth="78.0" text="Recipient:" />
-      <Label layoutX="22.0" layoutY="74.0" prefHeight="32.0" prefWidth="78.0" text="Subject:" />
-      <TextField fx:id="recipientTextField" layoutX="89.0" layoutY="43.0" prefHeight="25.0" prefWidth="398.0" />
-      <TextField fx:id="subjectTextField" layoutX="89.0" layoutY="77.0" prefHeight="25.0" prefWidth="398.0" />
-      <HTMLEditor fx:id="htmlEditor" htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" layoutX="12.0" layoutY="109.0" prefHeight="455.0" prefWidth="505.0" />
-      <Button layoutX="474.0" layoutY="564.0" mnemonicParsing="false" onAction="#sendButtonAction" text="Send" />
+      <Label layoutX="22.0" layoutY="40.0" prefHeight="32.0" prefWidth="78.0" text="Recipient:" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="40.0" />
+      <Label layoutX="22.0" layoutY="74.0" prefHeight="32.0" prefWidth="78.0" text="Subject:" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="74.0" />
+      <TextField fx:id="recipientTextField" layoutX="89.0" layoutY="43.0" prefHeight="25.0" prefWidth="398.0" AnchorPane.leftAnchor="89.0" AnchorPane.rightAnchor="42.0" AnchorPane.topAnchor="43.0" />
+      <TextField fx:id="subjectTextField" layoutX="89.0" layoutY="77.0" prefHeight="25.0" prefWidth="398.0" AnchorPane.leftAnchor="89.0" AnchorPane.rightAnchor="42.0" AnchorPane.topAnchor="77.0" />
+      <HTMLEditor fx:id="htmlEditor" htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" layoutX="12.0" layoutY="138.0" prefHeight="426.0" prefWidth="505.0" AnchorPane.bottomAnchor="37.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="138.0" />
+      <Button layoutX="474.0" layoutY="564.0" mnemonicParsing="false" onAction="#sendButtonAction" text="Send" AnchorPane.bottomAnchor="12.0" AnchorPane.rightAnchor="12.0" />
       <Label fx:id="errorLabel" layoutX="12.0" layoutY="568.0" prefHeight="17.0" prefWidth="285.0" />
-      <Label layoutX="22.0" layoutY="8.0" prefHeight="32.0" prefWidth="78.0" text="Account:" />
-      <ChoiceBox fx:id="emailAccountChoice" layoutX="89.0" layoutY="12.0" prefHeight="25.0" prefWidth="398.0" />
+      <Label layoutX="22.0" layoutY="8.0" prefHeight="32.0" prefWidth="78.0" text="Account:" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="8.0" />
+      <ChoiceBox fx:id="emailAccountChoice" layoutX="89.0" layoutY="12.0" prefHeight="25.0" prefWidth="398.0" AnchorPane.leftAnchor="89.0" AnchorPane.rightAnchor="42.0" AnchorPane.topAnchor="12.0" />
+      <Button layoutX="22.0" layoutY="106.0" mnemonicParsing="false" onAction="#attachButtonAction" text="Attach" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="106.0" />
+      <HBox layoutX="89.0" layoutY="103.0" prefHeight="32.0" prefWidth="398.0" AnchorPane.leftAnchor="89.0" AnchorPane.rightAnchor="42.0" AnchorPane.topAnchor="103.0" />
    </children>
 </AnchorPane>

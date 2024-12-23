@@ -5,6 +5,7 @@ module FirstJavaFx {
     requires javafx.web;
     requires activation;
     requires java.mail;
+    requires java.desktop;
 
     opens emailClient.main;
     opens emailClient.main.view;

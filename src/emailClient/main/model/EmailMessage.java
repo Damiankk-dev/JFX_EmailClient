@@ -1,10 +1,13 @@
 package emailClient.main.model;
 
-import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.property.SimpleStringProperty;
 
 import javax.mail.Message;
+import javax.mail.MessagingException;
+import javax.mail.internet.MimeBodyPart;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Date;
 
 public class EmailMessage {
@@ -16,6 +19,12 @@ public class EmailMessage {
     private SimpleObjectProperty<Date> date;
     private boolean isRead;
     private Message message;
+    private List<MimeBodyPart> attachmentList = new ArrayList<MimeBodyPart>();
+    private boolean hasAttachments = false;
+    public List<MimeBodyPart> getAttachmentList(){
+        return attachmentList;
+    }
+
 
     public EmailMessage(String subject, String sender, String recipient, int size, Date date, boolean isRead, Message message){
         this.subject = new SimpleStringProperty(subject);
@@ -57,5 +66,19 @@ public class EmailMessage {
 
     public void setRead(boolean read) {
         isRead = read;
+    }
+
+    public void addAttachment(MimeBodyPart mbp) {
+        hasAttachments = true;
+        attachmentList.add(mbp);
+        try {
+            System.out.println("Added: " + mbp.getFileName());
+        } catch (MessagingException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public boolean hasAttachments() {
+        return hasAttachments;
     }
 }
